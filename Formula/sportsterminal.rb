@@ -5,21 +5,21 @@
 class Sportsterminal < Formula
   desc "Beautiful terminal interface for checking live sports scores"
   homepage "https://github.com/elliota43/sportsterminal"
-  version "1.1.1"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elliota43/sportsterminal/releases/download/v1.1.1/sportsterminal_1.1.1_Darwin_x86_64.tar.gz"
-      sha256 "69a23cabaf9628323a5023af731677ff83d8711f85e9ed99cd508260d2a3cbb4"
+      url "https://github.com/elliota43/sportsterminal/releases/download/v1.2.0/sportsterminal_1.2.0_Darwin_x86_64.tar.gz"
+      sha256 "8dc7e32db2403593da768dbe810af2fdad8846379dca1e2d452ee9a39b524cc2"
 
       def install
         bin.install "sportsterminal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elliota43/sportsterminal/releases/download/v1.1.1/sportsterminal_1.1.1_Darwin_arm64.tar.gz"
-      sha256 "86db1be0afa15fc27e126913c9533bf8f65344bd7ee89d1d8453bd588d468f5f"
+      url "https://github.com/elliota43/sportsterminal/releases/download/v1.2.0/sportsterminal_1.2.0_Darwin_arm64.tar.gz"
+      sha256 "0a6d743230a54ee66abb4a9d52a0e6dcea032d7dacf38119a110f35d9c52c29d"
 
       def install
         bin.install "sportsterminal"
@@ -29,15 +29,15 @@ class Sportsterminal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elliota43/sportsterminal/releases/download/v1.1.1/sportsterminal_1.1.1_Linux_x86_64.tar.gz"
-      sha256 "d7361a3c0aca491d7efd4c2cdce4139de25477770555c7770352d13ad9fb0958"
+      url "https://github.com/elliota43/sportsterminal/releases/download/v1.2.0/sportsterminal_1.2.0_Linux_x86_64.tar.gz"
+      sha256 "a9eb9eb7ca0466827a62280d8c650923c27ab7d46ec7a92565d8986a4f2ecafe"
       def install
         bin.install "sportsterminal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elliota43/sportsterminal/releases/download/v1.1.1/sportsterminal_1.1.1_Linux_arm64.tar.gz"
-      sha256 "6acdf4827d53735ce33d21633bff0826ef151c0b4c26b7e4500c57b457663633"
+      url "https://github.com/elliota43/sportsterminal/releases/download/v1.2.0/sportsterminal_1.2.0_Linux_arm64.tar.gz"
+      sha256 "53a6a3f8343ab71f60c235d3c7b187a176c5f815e17e99f9ff40756e43504806"
       def install
         bin.install "sportsterminal"
       end
